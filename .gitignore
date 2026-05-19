@@ -7,4 +7,4 @@ venv/
 *.log
 
 .cursor/
-CLAUDE.md
+CLAUDE.mdoutput/*.plain.txt

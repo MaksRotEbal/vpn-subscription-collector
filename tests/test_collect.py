@@ -1,4 +1,4 @@
-"""Tests for subscription collector (no real network)."""
+﻿"""Tests for subscription collector (no real network)."""
 
 import base64
 import json
@@ -162,7 +162,7 @@ def test_collect_writes_three_files(mock_tcp, tmp_path, monkeypatch):
     assert (out / f"{SUB_WL}.txt").exists()
     assert (out / f"{SUB_BL}.txt").exists()
     assert (out / f"{SUB_ALL}.txt").exists()
-    assert len(list(out.iterdir())) == 3
+    assert len([p for p in out.glob("MaksRotEbal_*.txt") if not p.name.endswith(".plain.txt")]) == 3
     assert result["stats"]["wl"] <= 100
 
 

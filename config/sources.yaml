@@ -3,30 +3,63 @@
 settings:
   output_dir: output
   request_timeout_sec: 30
-  user_agent: "vpn-sub-collector/1.0 (+https://github.com)"
+  user_agent: "vpn-sub-collector/1.0 (+https://github.com/MaksRotEbal/vpn-subscription-collector)"
   connect_timeout_sec: 4
   health_workers: 50
   max_wl: 100
   max_bl: 100
   max_all: 200
+  max_health_checks: 1500
 
 sources:
   - name: ebrasha-v2ray-lite
-    description: "ebrasha/free-v2ray-public-list"
     url: "https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/refs/heads/main/V2Ray-Config-By-EbraSha.txt"
     enabled: true
 
   - name: ebrasha-vless
-    description: "ebrasha/free-v2ray-public-list VLESS"
     url: "https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/refs/heads/main/vless_configs.txt"
-    enabled: false
+    enabled: true
+
+  - name: ebrasha-vmess
+    url: "https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/refs/heads/main/vmess_configs.txt"
+    enabled: true
+
+  - name: ebrasha-trojan
+    url: "https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/refs/heads/main/trojan_configs.txt"
+    enabled: true
+
+  - name: openproxylist-v2ray-raw
+    url: "https://raw.githubusercontent.com/roosterkid/openproxylist/main/V2RAY_RAW.txt"
+    enabled: true
 
   - name: openproxylist-v2ray
-    description: "roosterkid/openproxylist V2Ray RAW"
-    url: "https://raw.githubusercontent.com/roosterkid/openproxylist/main/V2RAY_RAW.txt"
-    enabled: false
+    url: "https://raw.githubusercontent.com/roosterkid/openproxylist/main/V2RAY.txt"
+    enabled: true
 
   - name: hans-thomas-subscription
-    description: "hans-thomas/v2ray-subscription"
     url: "https://raw.githubusercontent.com/hans-thomas/v2ray-subscription/refs/heads/master/servers.txt"
-    enabled: false
+    enabled: true
+
+  - name: pawdroid-free-servers
+    url: "https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub"
+    enabled: true
+
+  - name: freefq-master
+    url: "https://raw.githubusercontent.com/freefq/free/master/v2"
+    enabled: true
+
+  - name: ripaojiedian-freenode
+    url: "https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub"
+    enabled: true
+
+  - name: mahdibland-ss-merge
+    url: "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/sub/sub_merge.txt"
+    enabled: true
+
+  - name: mfuu-v2ray
+    url: "https://raw.githubusercontent.com/mfuu/v2ray/master/v2ray"
+    enabled: true
+
+  - name: peasoft-nomorewalls
+    url: "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt"
+    enabled: true

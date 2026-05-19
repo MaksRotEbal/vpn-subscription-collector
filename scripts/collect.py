@@ -69,8 +69,6 @@ class ParsedServer:
 
     @property
     def label(self) -> str:
-        if self.flag:
-            return f"{self.flag} {self.country_name}".strip()
         return self.country_name
 
 
@@ -285,10 +283,7 @@ def process_uri(
     meta = f"{name} {host} {uri}"
     bypass = classify_bypass(meta, rules_bs, rules_cs, default_bypass)
     cc, cname, flag = detect_country(meta, host, country_names, tld_country)
-    if flag:
-        label = f"{flag} {cname}".strip()
-    else:
-        label = cname
+    label = cname
     final_uri = rename_uri(uri, label)
     return ParsedServer(
         uri=final_uri,
@@ -305,10 +300,12 @@ def process_uri(
 
 
 def tcp_reachable(host: str, port: int, timeout: float) -> bool:
+    if not host or len(host) > 253:
+        return False
     try:
         with socket.create_connection((host, port), timeout=timeout):
             return True
-    except OSError:
+    except (OSError, UnicodeError):
         return False
 
 
@@ -356,10 +353,13 @@ def fetch_source(url: str, timeout: int, user_agent: str) -> str:
 
 
 def write_subscription(path: Path, uris: list[str]) -> None:
+    """Subscription file: single base64 of newline-joined plain URI lines."""
     path.parent.mkdir(parents=True, exist_ok=True)
     body = "\n".join(uris)
     encoded = base64.b64encode(body.encode("utf-8")).decode("ascii")
-    path.write_text(encoded + "\n", encoding="utf-8")
+    path.write_text(encoded, encoding="utf-8")
+    plain_path = path.parent / f"{path.stem}.plain.txt"
+    plain_path.write_text((body + "\n") if body else "", encoding="utf-8")
 
 
 
@@ -425,13 +425,15 @@ def collect(
     max_wl = int(settings.get("max_wl", 100))
     max_bl = int(settings.get("max_bl", 100))
     max_all = int(settings.get("max_all", 200))
+    max_health_checks = int(settings.get("max_health_checks", 1500))
 
     if skip_health_check:
         alive = servers
         print("Health check skipped")
     else:
-        print(f"Health check (TCP) for {len(servers)} servers...")
-        alive = filter_alive(servers, connect_timeout, health_workers)
+        pool = servers[:max_health_checks]
+        print(f"Health check (TCP) for {len(pool)} servers (of {len(servers)} parsed)...")
+        alive = filter_alive(pool, connect_timeout, health_workers)
         print(f"Alive: {len(alive)} / {len(servers)}")
 
     bs_alive = [s for s in alive if s.bypass == "БС"]
