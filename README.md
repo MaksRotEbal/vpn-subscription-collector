@@ -8,9 +8,9 @@
 
 | Подписка | URL (raw) |
 |----------|-----------|
-| WL (БС, до 100) | `https://raw.githubusercontent.com/USER/REPO/main/output/MaksRotEbal_WL.txt` |
-| BL (ЧС, до 100) | `https://raw.githubusercontent.com/USER/REPO/main/output/MaksRotEbal_BL.txt` |
-| ALL (до 200) | `https://raw.githubusercontent.com/USER/REPO/main/output/MaksRotEbal_ALL.txt` |
+| WL (БС, до 100) | `https://raw.githubusercontent.com/USER/REPO/main/output/MaksRotEbal_WL.plain.txt` |
+| BL (ЧС, до 100) | `https://raw.githubusercontent.com/USER/REPO/main/output/MaksRotEbal_BL.plain.txt` |
+| ALL (до 200) | `https://raw.githubusercontent.com/USER/REPO/main/output/MaksRotEbal_ALL.plain.txt` |
 
 
 ## Клиенты
