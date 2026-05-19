@@ -1,0 +1,133 @@
+# Правила классификации обхода: БС (белый список) / ЧС (чёрный список)
+# Регистронезависимый поиск подстрок в исходном имени/тегах/хосте.
+
+default_bypass: "ЧС"
+
+bypass_bs:
+  - "бс"
+  - "bs"
+  - "whitelist"
+  - "white list"
+  - "white-list"
+  - "wlist"
+  - "белый"
+  - "белый список"
+  - "mobile"
+  - "мтс"
+  - "mts"
+  - "megafon"
+  - "мегафон"
+  - "beeline"
+  - "билайн"
+  - "tele2"
+  - "теле2"
+  - "yota"
+  - "йота"
+  - "t2"
+  - "operator"
+  - "оператор"
+
+bypass_cs:
+  - "чс"
+  - "cs"
+  - "chs"
+  - "blacklist"
+  - "black list"
+  - "black-list"
+  - "чёрный"
+  - "черный"
+  - "black"
+
+# Коды стран (ISO 3166-1 alpha-2) → [название EN, флаг]
+# При необходимости дополняйте вручную.
+country_names:
+  US: ["United States", "🇺🇸"]
+  GB: ["United Kingdom", "🇬🇧"]
+  UK: ["United Kingdom", "🇬🇧"]
+  DE: ["Germany", "🇩🇪"]
+  NL: ["Netherlands", "🇳🇱"]
+  FR: ["France", "🇫🇷"]
+  FI: ["Finland", "🇫🇮"]
+  SE: ["Sweden", "🇸🇪"]
+  "NO": ["Norway", "🇳🇴"]
+  PL: ["Poland", "🇵🇱"]
+  CZ: ["Czechia", "🇨🇿"]
+  AT: ["Austria", "🇦🇹"]
+  CH: ["Switzerland", "🇨🇭"]
+  IT: ["Italy", "🇮🇹"]
+  ES: ["Spain", "🇪🇸"]
+  PT: ["Portugal", "🇵🇹"]
+  RO: ["Romania", "🇷🇴"]
+  BG: ["Bulgaria", "🇧🇬"]
+  TR: ["Turkey", "🇹🇷"]
+  UA: ["Ukraine", "🇺🇦"]
+  KZ: ["Kazakhstan", "🇰🇿"]
+  RU: ["Russia", "🇷🇺"]
+  JP: ["Japan", "🇯🇵"]
+  KR: ["South Korea", "🇰🇷"]
+  SG: ["Singapore", "🇸🇬"]
+  HK: ["Hong Kong", "🇭🇰"]
+  TW: ["Taiwan", "🇹🇼"]
+  IN: ["India", "🇮🇳"]
+  CA: ["Canada", "🇨🇦"]
+  AU: ["Australia", "🇦🇺"]
+  BR: ["Brazil", "🇧🇷"]
+  AR: ["Argentina", "🇦🇷"]
+  MX: ["Mexico", "🇲🇽"]
+  AE: ["UAE", "🇦🇪"]
+  IL: ["Israel", "🇮🇱"]
+  LT: ["Lithuania", "🇱🇹"]
+  LV: ["Latvia", "🇱🇻"]
+  EE: ["Estonia", "🇪🇪"]
+  LU: ["Luxembourg", "🇱🇺"]
+  IE: ["Ireland", "🇮🇪"]
+  DK: ["Denmark", "🇩🇰"]
+  IS: ["Iceland", "🇮🇸"]
+  HU: ["Hungary", "🇭🇺"]
+  SK: ["Slovakia", "🇸🇰"]
+  HR: ["Croatia", "🇭🇷"]
+  RS: ["Serbia", "🇷🇸"]
+  GE: ["Georgia", "🇬🇪"]
+  AM: ["Armenia", "🇦🇲"]
+  AZ: ["Azerbaijan", "🇦🇿"]
+  MD: ["Moldova", "🇲🇩"]
+  BY: ["Belarus", "🇧🇾"]
+  VN: ["Vietnam", "🇻🇳"]
+  TH: ["Thailand", "🇹🇭"]
+  MY: ["Malaysia", "🇲🇾"]
+  ID: ["Indonesia", "🇮🇩"]
+  PH: ["Philippines", "🇵🇭"]
+  CL: ["Chile", "🇨🇱"]
+  CO: ["Colombia", "🇨🇴"]
+  ZA: ["South Africa", "🇿🇦"]
+  IR: ["Iran", "🇮🇷"]
+  IQ: ["Iraq", "🇮🇶"]
+  UNKNOWN: ["Unknown", ""]
+
+# TLD хоста → код страны (эвристика)
+tld_country:
+  de: DE
+  nl: NL
+  fr: FR
+  uk: GB
+  co.uk: GB
+  ru: RU
+  pl: PL
+  fi: FI
+  se: SE
+  no: NO
+  ch: CH
+  at: AT
+  it: IT
+  es: ES
+  jp: JP
+  sg: SG
+  hk: HK
+  tw: TW
+  kr: KR
+  us: US
+  ca: CA
+  au: AU
+  tr: TR
+  ua: UA
+  kz: KZ
