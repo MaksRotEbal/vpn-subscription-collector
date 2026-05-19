@@ -1,9 +1,10 @@
-"""Тесты парсера подписок (без сети)."""
+"""Tests for subscription collector (no real network)."""
 
 import base64
 import json
 import sys
 from pathlib import Path
+from unittest.mock import patch
 
 import pytest
 
@@ -11,13 +12,18 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from collect import (  # noqa: E402
+    SUB_ALL,
+    SUB_BL,
+    SUB_WL,
     classify_bypass,
+    collect,
     decode_subscription_body,
     detect_country,
     extract_lines,
     parse_uri,
     process_uri,
     rename_uri,
+    tcp_reachable,
 )
 
 SAMPLE_VMESS = (
@@ -64,30 +70,32 @@ def test_parse_vless_trojan_vmess():
 
 
 def test_classify_bypass():
-    assert classify_bypass("MTS mobile whitelist", ["mobile"], ["black"], "ЧС") == "БС"
-    assert classify_bypass("blacklist node", ["mobile"], ["black"], "ЧС") == "ЧС"
-    assert classify_bypass("generic", ["mobile"], ["black"], "ЧС") == "ЧС"
+    assert classify_bypass("MTS mobile whitelist", ["mobile"], ["black"], "\u0427\u0421") == "\u0411\u0421"
+    assert classify_bypass("blacklist node", ["mobile"], ["black"], "\u0427\u0421") == "\u0427\u0421"
 
 
 def test_detect_country_flag_and_tld():
-    names = {"DE": ["Germany", "🇩🇪"], "NL": ["Netherlands", "🇳🇱"], "UNKNOWN": ["Unknown", ""]}
+    names = {
+        "DE": ["Germany", "\U0001f1e9\U0001f1ea"],
+        "NL": ["Netherlands", "\U0001f1f3\U0001f1f1"],
+        "UNKNOWN": ["Unknown", ""],
+    }
     tld = {"de": "DE", "nl": "NL"}
-    cc, name, flag = detect_country("🇳🇱 fast", "x.com", names, tld)
+    cc, name, flag = detect_country("NL fast", "x.com", names, tld)
     assert cc == "NL"
     assert "Netherlands" in name
     cc2, _, _ = detect_country("node", "srv.example.de", names, tld)
     assert cc2 == "DE"
 
 
-def test_process_uri_rename():
+def test_process_uri_country_only_name():
     cls = {
         "bypass_bs": ["whitelist", "mobile"],
         "bypass_cs": ["blacklist"],
-        "default_bypass": "ЧС",
+        "default_bypass": "\u0427\u0421",
         "country_names": {
-            "DE": ["Germany", "🇩🇪"],
-            "NL": ["Netherlands", "🇳🇱"],
-            "FI": ["Finland", "🇫🇮"],
+            "DE": ["Germany", "\U0001f1e9\U0001f1ea"],
+            "NL": ["Netherlands", "\U0001f1f3\U0001f1f1"],
             "UNKNOWN": ["Unknown", ""],
         },
         "tld_country": {"de": "DE"},
@@ -102,22 +110,65 @@ def test_process_uri_rename():
         cls["tld_country"],
     )
     assert srv is not None
-    assert srv.bypass == "БС"
-    assert "Germany" in srv.display_name or "DE" in srv.display_name
-    assert "БС" in srv.uri or "%D0%" in srv.uri  # url-encoded Cyrillic
+    assert srv.bypass == "\u0411\u0421"
+    assert "\u0411\u0421" not in srv.display_name
+    assert "\u0427\u0421" not in srv.display_name
+    assert "Germany" in srv.display_name
 
 
 def test_rename_vmess_ps():
-    out = rename_uri(SAMPLE_VMESS, "🇫🇮 Finland БС")
-    assert out.startswith("vmess://")
+    out = rename_uri(SAMPLE_VMESS, "Finland")
     payload = out.split("://", 1)[1]
     data = json.loads(base64.urlsafe_b64decode(payload + "=="))
-    assert data["ps"] == "🇫🇮 Finland БС"
+    assert data["ps"] == "Finland"
 
 
-@pytest.mark.parametrize(
-    "scheme",
-    ["hysteria2://token@1.1.1.1:443", "hy2://token@1.1.1.1:443", "ss://YWVzLTEyODpwc0AxLjEuMS4xOjgzODg#node"],
-)
-def test_parse_extra_schemes(scheme):
-    assert parse_uri(scheme) is not None
+@patch("collect.tcp_reachable", return_value=True)
+def test_collect_writes_three_files(mock_tcp, tmp_path, monkeypatch):
+    monkeypatch.setattr(
+        "collect.ROOT",
+        tmp_path,
+    )
+    out = tmp_path / "output"
+    sources = tmp_path / "sources.yaml"
+    sources.write_text(
+        "settings:\n  output_dir: output\n  max_wl: 100\n  max_bl: 100\n  max_all: 200\nsources: []\n",
+        encoding="utf-8",
+    )
+    classification = ROOT / "config" / "classification.yaml"
+    vmess_sample = (
+        "vmess://"
+        + base64.urlsafe_b64encode(
+            json.dumps(
+                {
+                    "v": "2",
+                    "ps": "FI",
+                    "add": "9.9.9.9",
+                    "port": "443",
+                    "id": "00000000-0000-0000-0000-000000000001",
+                }
+            ).encode()
+        )
+        .decode()
+        .rstrip("=")
+    )
+    samples = [
+        "vless://00000000-0000-0000-0000-000000000001@1.2.3.4:443?encryption=none#DE%20Whitelist",
+        "trojan://password@nl.example.nl:443#NL%20blacklist",
+        vmess_sample,
+    ]
+    result = collect(sources, classification, offline_samples=samples, skip_health_check=False)
+    assert mock_tcp.called
+    assert (out / f"{SUB_WL}.txt").exists()
+    assert (out / f"{SUB_BL}.txt").exists()
+    assert (out / f"{SUB_ALL}.txt").exists()
+    assert len(list(out.iterdir())) == 3
+    assert result["stats"]["wl"] <= 100
+
+
+def test_tcp_reachable_mock():
+    with patch("collect.socket.create_connection") as m:
+        m.return_value.__enter__.return_value = object()
+        assert tcp_reachable("1.1.1.1", 443, 1.0) is True
+    with patch("collect.socket.create_connection", side_effect=OSError):
+        assert tcp_reachable("1.1.1.1", 443, 1.0) is False

@@ -5,10 +5,13 @@ from __future__ import annotations
 
 import argparse
 import base64
+import socket
+import shutil
 import json
 import re
 import sys
 from dataclasses import dataclass
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from typing import Any
 from urllib.parse import parse_qs, quote, unquote, urlparse, urlunparse
@@ -39,6 +42,10 @@ URI_LINE_RE = re.compile(
     re.IGNORECASE,
 )
 
+SUB_WL = "MaksRotEbal_WL"
+SUB_BL = "MaksRotEbal_BL"
+SUB_ALL = "MaksRotEbal_ALL"
+
 
 @dataclass
 class ParsedServer:
@@ -62,12 +69,9 @@ class ParsedServer:
 
     @property
     def label(self) -> str:
-        parts = []
         if self.flag:
-            parts.append(self.flag)
-        parts.append(self.country_name)
-        parts.append(self.bypass)
-        return " ".join(p for p in parts if p)
+            return f"{self.flag} {self.country_name}".strip()
+        return self.country_name
 
 
 def load_yaml(path: Path) -> dict[str, Any]:
@@ -282,11 +286,9 @@ def process_uri(
     bypass = classify_bypass(meta, rules_bs, rules_cs, default_bypass)
     cc, cname, flag = detect_country(meta, host, country_names, tld_country)
     if flag:
-        label = f"{flag} {cname} {bypass}"
-    elif cc != "UNKNOWN":
-        label = f"{cc} {bypass}"
+        label = f"{flag} {cname}".strip()
     else:
-        label = f"{cname} {bypass}"
+        label = cname
     final_uri = rename_uri(uri, label)
     return ParsedServer(
         uri=final_uri,
@@ -300,6 +302,48 @@ def process_uri(
         flag=flag,
     )
 
+
+
+def tcp_reachable(host: str, port: int, timeout: float) -> bool:
+    try:
+        with socket.create_connection((host, port), timeout=timeout):
+            return True
+    except OSError:
+        return False
+
+
+def filter_alive(
+    servers: list[ParsedServer],
+    timeout: float,
+    workers: int,
+) -> list[ParsedServer]:
+    if not servers:
+        return []
+    alive: list[ParsedServer] = []
+    workers = max(1, min(workers, 50))
+
+    def check(s: ParsedServer) -> tuple[ParsedServer, bool]:
+        return s, tcp_reachable(s.host, s.port, timeout)
+
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        futures = [pool.submit(check, s) for s in servers]
+        for fut in as_completed(futures):
+            srv, ok = fut.result()
+            if ok:
+                alive.append(srv)
+    alive.sort(key=lambda s: s.sort_key)
+    return alive
+
+
+def clear_output_dir(out_dir: Path) -> None:
+    if not out_dir.exists():
+        out_dir.mkdir(parents=True, exist_ok=True)
+        return
+    for child in out_dir.iterdir():
+        if child.is_file():
+            child.unlink()
+        elif child.is_dir():
+            shutil.rmtree(child)
 
 def fetch_source(url: str, timeout: int, user_agent: str) -> str:
     resp = requests.get(
@@ -318,33 +362,16 @@ def write_subscription(path: Path, uris: list[str]) -> None:
     path.write_text(encoded + "\n", encoding="utf-8")
 
 
-def chunk_write(
-    out_dir: Path,
-    basename: str,
-    uris: list[str],
-    per_file: int,
-) -> list[Path]:
-    written: list[Path] = []
-    if not uris:
-        return written
-    for i in range(0, len(uris), per_file):
-        chunk = uris[i : i + per_file]
-        suffix = "" if len(uris) <= per_file else f"-{i // per_file + 1:03d}"
-        path = out_dir / f"{basename}{suffix}.txt"
-        write_subscription(path, chunk)
-        written.append(path)
-    return written
-
 
 def collect(
     sources_path: Path,
     classification_path: Path,
     offline_samples: list[str] | None = None,
+    skip_health_check: bool = False,
 ) -> dict[str, Any]:
     src_cfg = load_yaml(sources_path)
     cls_cfg = load_yaml(classification_path)
     settings = src_cfg.get("settings") or {}
-    per_file = int(settings.get("servers_per_file", 100))
     out_dir = ROOT / settings.get("output_dir", "output")
     timeout = int(settings.get("request_timeout_sec", 30))
     user_agent = settings.get("user_agent", "vpn-sub-collector/1.0")
@@ -393,41 +420,49 @@ def collect(
             deduped.setdefault(srv.dedup_key, srv)
     servers = sorted(deduped.values(), key=lambda s: s.sort_key)
 
-    stats = {
-        "total": len(servers),
-        "bs": sum(1 for s in servers if s.bypass == "БС"),
-        "cs": sum(1 for s in servers if s.bypass == "ЧС"),
-        "skipped": skipped,
+    connect_timeout = float(settings.get("connect_timeout_sec", 4))
+    health_workers = int(settings.get("health_workers", 50))
+    max_wl = int(settings.get("max_wl", 100))
+    max_bl = int(settings.get("max_bl", 100))
+    max_all = int(settings.get("max_all", 200))
+
+    if skip_health_check:
+        alive = servers
+        print("Health check skipped")
+    else:
+        print(f"Health check (TCP) for {len(servers)} servers...")
+        alive = filter_alive(servers, connect_timeout, health_workers)
+        print(f"Alive: {len(alive)} / {len(servers)}")
+
+    bs_alive = [s for s in alive if s.bypass == "БС"]
+    cs_alive = [s for s in alive if s.bypass == "ЧС"]
+    all_alive = alive
+
+    wl_uris = [s.uri for s in bs_alive[:max_wl]]
+    bl_uris = [s.uri for s in cs_alive[:max_bl]]
+    all_uris = [s.uri for s in all_alive[:max_all]]
+
+    clear_output_dir(out_dir)
+
+    files_map = {
+        f"{SUB_WL}.txt": wl_uris,
+        f"{SUB_BL}.txt": bl_uris,
+        f"{SUB_ALL}.txt": all_uris,
     }
-
-    bs_uris = [s.uri for s in servers if s.bypass == "БС"]
-    cs_uris = [s.uri for s in servers if s.bypass == "ЧС"]
-
-    out_dir.mkdir(parents=True, exist_ok=True)
-    (out_dir / "by-country").mkdir(exist_ok=True)
-
     written: list[str] = []
-    for path in chunk_write(out_dir, "all-bs", bs_uris, per_file):
+    for fname, uris in files_map.items():
+        path = out_dir / fname
+        write_subscription(path, uris)
         written.append(str(path.relative_to(ROOT)))
-    for path in chunk_write(out_dir, "all-cs", cs_uris, per_file):
-        written.append(str(path.relative_to(ROOT)))
 
-    by_country: dict[tuple[str, str], list[str]] = {}
-    for s in servers:
-        key = (s.country_code, s.bypass)
-        by_country.setdefault(key, []).append(s.uri)
-
-    bypass_file = {"БС": "bs", "ЧС": "cs"}
-    for (cc, bypass), uris in sorted(by_country.items()):
-        basename = f"{cc.lower()}-{bypass_file.get(bypass, 'other')}"
-        for path in chunk_write(out_dir / "by-country", basename, uris, per_file):
-            written.append(str(path.relative_to(ROOT)))
-
-    meta_path = out_dir / "meta.json"
-    meta_path.write_text(
-        json.dumps({"stats": stats, "files": written}, ensure_ascii=False, indent=2),
-        encoding="utf-8",
-    )
+    stats = {
+        "total_parsed": len(servers),
+        "alive": len(alive),
+        "wl": len(wl_uris),
+        "bl": len(bl_uris),
+        "all": len(all_uris),
+        "skipped_parse": skipped,
+    }
     print(json.dumps(stats, ensure_ascii=False))
     return {"stats": stats, "files": written}
 
@@ -476,7 +511,12 @@ def main() -> int:
         ]
 
     try:
-        collect(args.sources, args.classification, offline_samples=samples)
+        collect(
+            args.sources,
+            args.classification,
+            offline_samples=samples,
+            skip_health_check=args.offline,
+        )
     except Exception as exc:
         print(f"Error: {exc}", file=sys.stderr)
         return 1

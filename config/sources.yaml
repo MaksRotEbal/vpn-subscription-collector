@@ -1,26 +1,28 @@
-# Публичные источники подписок (только открытые агрегаторы).
-# Включайте/отключайте источники через enabled: true/false.
-# Документация источников — в README.md.
+# Public subscription sources (open mirrors only). See README.md.
 
 settings:
-  servers_per_file: 100
   output_dir: output
   request_timeout_sec: 30
   user_agent: "vpn-sub-collector/1.0 (+https://github.com)"
+  connect_timeout_sec: 4
+  health_workers: 50
+  max_wl: 100
+  max_bl: 100
+  max_all: 200
 
 sources:
   - name: ebrasha-v2ray-lite
-    description: "ebrasha/free-v2ray-public-list — облегчённая сводка"
+    description: "ebrasha/free-v2ray-public-list"
     url: "https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/refs/heads/main/V2Ray-Config-By-EbraSha.txt"
     enabled: true
 
   - name: ebrasha-vless
-    description: "ebrasha/free-v2ray-public-list — только VLESS"
+    description: "ebrasha/free-v2ray-public-list VLESS"
     url: "https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/refs/heads/main/vless_configs.txt"
     enabled: false
 
   - name: openproxylist-v2ray
-    description: "roosterkid/openproxylist — V2Ray RAW"
+    description: "roosterkid/openproxylist V2Ray RAW"
     url: "https://raw.githubusercontent.com/roosterkid/openproxylist/main/V2RAY_RAW.txt"
     enabled: false
 
@@ -28,8 +30,3 @@ sources:
     description: "hans-thomas/v2ray-subscription"
     url: "https://raw.githubusercontent.com/hans-thomas/v2ray-subscription/refs/heads/master/servers.txt"
     enabled: false
-
-  # Добавьте свои URL (base64-подписка или plain URI, по одному на строку):
-  # - name: my-source
-  #   url: "https://example.com/sub.txt"
-  #   enabled: true
