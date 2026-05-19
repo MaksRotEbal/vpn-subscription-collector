@@ -2,7 +2,7 @@
 
 Автообновляемые подписки из открытых источников: **БС (WL)**, **ЧС (BL)** и **ALL**. Перед добавлением в подписку каждый сервер проходит **проверку доступности** — TCP-подключение к `host:port` (таймаут ~4 с), без полноценного VPN-туннеля.
 
-## Файлы (после push на GitHub)
+## Подписки
 
 Замените `USER` и `REPO` на свой логин и репозиторий:
 
@@ -12,7 +12,6 @@
 | BL (ЧС, до 100) | `https://raw.githubusercontent.com/USER/REPO/main/output/MaksRotEbal_BL.txt` |
 | ALL (до 200) | `https://raw.githubusercontent.com/USER/REPO/main/output/MaksRotEbal_ALL.txt` |
 
-Имена узлов в клиенте — **только страна** (например `Netherlands` или `🇳🇱 Netherlands`).
 
 ## Клиенты
 
