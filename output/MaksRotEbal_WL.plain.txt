@@ -91,7 +91,7 @@ vless://a646b695-f10c-42ef-8288-9021ded98927@104.17.20.55:8080?security&type=ws&
 vless://ef23616d-8a9d-4b22-b2f5-9bda864de179@104.17.201.245:2052?path=%2Fx0o2qglxz7zu&encryption=none&type=ws&host=index.arcane509.workers.dev&fp=chrome&ed=2560&eh=Sec-WebSocket-Protocol#Belarus
 vless://6202b230-417c-4d8e-b624-0f71afa9c75d@104.17.211.119:443?ed=2560&eh=Sec-WebSocket-Protocol&encryption=none&host=sni.111000.v6.army&path=%2F%3Fhttps%253A%252F%252Ft.me%252Fwangcai2%25F0%259F%2587%25A8%25F0%259F%2587%25B3%3D&security=tls&sni=sni.111000.v6.army&type=ws#Belarus
 trojan://4732adfa16c6450bbef87264e41332db@104.17.215.18:443?sni=jobscareerforstudent.com&type=ws&host=jobscareerforstudent.com&path=%2F6b777a91&allowInsecure=1#Belarus
-trojan://669d0ac7b5b64ebbb1abb75d5d540a5c@104.17.215.2:443?security=tls&sni=jobscareerforstudent.com&type=ws&host=jobscareerforstudent.com&path=%2F6b777a91#Belarus
+trojan://669d0ac7b5b64ebbb1abb75d5d540a5c@104.17.215.2:443?security=tls&amp;type=ws&amp;sni=jobscareerforstudent.com&amp;path=%2F6b777a91&amp;host=jobscareerforstudent.com#Belarus
 trojan://b4e8771997c94732acbc9ec4d19c2589@104.17.215.6:443/?type=tcp&security=tls&sni=jobscareerfortoday.com#Belarus
 trojan://2cba4104747d49d18319e5ade1b93ab5@104.17.215.8:443/?type=tcp&security=tls&sni=jobscareertoday.com#Belarus
 vless://98f7d01d-e770-471f-80ff-8f480ad84f7c@104.17.220.114:80?ed=2048&eh=Sec-WebSocket-Protocol&encryption=none&host=divine-mode-ac41.amirss.workers.dev&path=%2F&security=none&type=ws#Belarus
