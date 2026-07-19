@@ -42,7 +42,7 @@ vless://3b4f4101-7ff7-4496-bda3-1d63dc2dad66@104.16.186.15:2053?security=tls&sni
 vless://5eb4f51f-e6db-4a65-9929-6385d6193519@104.16.191.245:80?encryption=none&security=none&type=xhttp&headerType=none&path=%2Fpanrl-namahdod-id-website-ss&host=fr.cdn.1255-id.iramssnew2.ir&mode=packet-up#Belarus
 trojan://f0eb8c92ce8946aaba856569cff1a16b@104.16.192.135:443/?type=tcp&security=tls&sni=jobscareertoday.com#Belarus
 trojan://4732adfa16c6450bbef87264e41332db@104.16.192.138:443?security=tls&sni=jobscareerforlawyers.com&type=ws&host=jobscareerforlawyers.com&path=6b777a91#Belarus
-trojan://669d0ac7b5b64ebbb1abb75d5d540a5c@104.16.192.145:443?security=tls&amp;type=ws&amp;sni=jobscareerforlawyers.com&amp;path=%2F6b777a91&amp;host=jobscareerforlawyers.com#Belarus
+trojan://669d0ac7b5b64ebbb1abb75d5d540a5c@104.16.192.145:443?security=tls&sni=jobscareerforlawyers.com&type=ws&host=jobscareerforlawyers.com&path=%2F6b777a91#Belarus
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@104.16.192.146:443/?type=tcp&security=tls&sni=jobscareertoday.com#Belarus
 trojan://2e3562a819634de686ade78e434c0963@104.16.192.148:443?security=tls&sni=jobscareerforstudent.com&type=ws&host=jobscareerforstudent.com&path=%2F6b777a91#Belarus
 trojan://e8105dfd24414268b6c7652c63731097@104.16.192.155:443/?type=tcp&security=tls&sni=jobscareerfortoday.com#Belarus
@@ -73,7 +73,6 @@ vless://2244d9e4-dc80-4c61-9362-dde0afd034dd@104.17.115.113:443?ed=2048&eh=Sec-W
 vless://59931360-0ee5-4ebd-8535-20e917bd8091@104.17.118.5:2087?path=%2F%3Fu%3D2c8828c18e&security=tls&encryption=none&insecure=0&host=testservers0.arminbetatest2-cc5.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=testservers0.arminbetatest2-cc5.workers.dev#Belarus
 vless://6202b230-417c-4d8e-b624-0f71afa9c75d@104.17.120.41:443?ed=2560&eh=Sec-WebSocket-Protocol&encryption=none&host=sni.111000.v6.army&path=%2F%3Fhttps%253A%252F%252Ft.me%252Fwangcai2%25F0%259F%2587%25A8%25F0%259F%2587%25B3%3D&security=tls&sni=sni.111000.v6.army&type=ws#Belarus
 trojan://Mitivpn@104.17.121.37:443?allowInsecure=1&alpn=h2%2Chttp%2F1.1&eh=Sec-WebSocket-Protocol&fp=chrome&host=my.hitgram.ir&path=%2F&sni=my.hitgram.ir&type=ws#Belarus
-vmess://eyJhZGQiOiAiMTA0LjE3LjEyMS40MyIsICJhaWQiOiAiMCIsICJhbHBuIjogIiIsICJmcCI6ICIiLCAiaG9zdCI6ICJvbWt1enlnaXYuY29tIiwgImlkIjogImU5OTQ3YjQyLTI3ZWQtNDAxZS1iNzVlLWM5ZWJkMzU3YzBmMyIsICJuZXQiOiAid3MiLCAicGF0aCI6ICIvIiwgInBvcnQiOiAiNDQzIiwgInBzIjogIkJlbGFydXMiLCAic2N5IjogImF1dG8iLCAic25pIjogIm9ta3V6eWdpdi5jb20iLCAidGxzIjogInRscyIsICJ0eXBlIjogIi0tLSIsICJ2IjogIjIifQ
 trojan://Mitivpn@104.17.121.9:443?allowInsecure=1&alpn=h2%2Chttp%2F1.1&eh=Sec-WebSocket-Protocol&fp=chrome&host=my.hitgram.ir&path=%2F&sni=my.hitgram.ir&type=ws#Belarus
 vmess://eyJhZGQiOiAiMTA0LjE3LjEyNC4xNzkiLCAiYWlkIjogMCwgImhvc3QiOiAiZ29vZ2xlLndoYXRzYXBwLnNuYXBwLnRvcm9iLmJhc2FsYW0uenVsYS51cGxhb2QtbXVzaWMuaXIuIiwgImlkIjogImY4OTc1ODcxLWE3YTAtNDkwNi04ODM1LWEyM2MxMjU4Y2ExZSIsICJuZXQiOiAid3MiLCAicGF0aCI6ICIvIiwgInBvcnQiOiA4MCwgInBzIjogIkJlbGFydXMiLCAic2VjdXJpdHkiOiAiYXV0byIsICJza2lwLWNlcnQtdmVyaWZ5IjogdHJ1ZSwgInNuaSI6ICIiLCAidGxzIjogIiIsICJ0eXBlIjogImF1dG8ifQ
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@104.17.147.1:443/?type=tcp&security=tls&sni=jobscareerforstudent.com#Belarus
@@ -98,3 +97,4 @@ trojan://4732adfa16c6450bbef87264e41332db@104.17.215.18:443?sni=jobscareerforstu
 trojan://669d0ac7b5b64ebbb1abb75d5d540a5c@104.17.215.2:443?security=tls&amp;type=ws&amp;sni=jobscareerforstudent.com&amp;path=%2F6b777a91&amp;host=jobscareerforstudent.com#Belarus
 trojan://b4e8771997c94732acbc9ec4d19c2589@104.17.215.6:443/?type=tcp&security=tls&sni=jobscareerfortoday.com#Belarus
 trojan://2cba4104747d49d18319e5ade1b93ab5@104.17.215.8:443/?type=tcp&security=tls&sni=jobscareertoday.com#Belarus
+vless://98f7d01d-e770-471f-80ff-8f480ad84f7c@104.17.220.114:80?ed=2048&eh=Sec-WebSocket-Protocol&encryption=none&host=divine-mode-ac41.amirss.workers.dev&path=%2F&security=none&type=ws#Belarus
