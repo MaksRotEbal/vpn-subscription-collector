@@ -6,8 +6,8 @@ ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXT2lyM2xYQmhNSERjTEZQUWRFWlhQdTM3X3BUUURDWGZ
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXT2lyM2xYQmhNSERjTEZQUWRFWlhQdTM3X3BUUURDWGZt@103.111.114.82:28061#Belarus
 vless://9dde0cfb-2f92-432e-9c52-6d2dec6803bb@103.133.1.0:80?security=none&type=ws&host=KnOtNrmV2rayOtanOtrmNnOtenOtl.tErmiUs-kAne-nOne.SARBAZIT.COM&path=%2F#Belarus
 trojan://114514@103.137.22.71:443?ed=2560&eh=Sec-WebSocket-Protocol&host=tjaaa.hhllfly.kdns.fr&path=https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3&sni=tjaaa.hhllfly.kdns.fr&type=ws#Belarus
-trojan://amclubs@103.160.204.1:443/?type=ws&host=tran.amclubstest.nyc.mn&path=%2F%3Fed%3D2560&security=tls&sni=tran.amclubstest.nyc.mn#Belarus
 vless://d6b8011a-c725-435a-9fec-bf6d3530392c@103.160.204.1:443/?type=ws&encryption=none&host=vlee.amclubs.nyc.mn&path=%2F%3Fed%3D2560&security=tls&sni=vlee.amclubs.nyc.mn#Belarus
+trojan://amclubs@103.160.204.1:443/?type=ws&host=tran.amclubstest.nyc.mn&path=%2F%3Fed%3D2560&security=tls&sni=tran.amclubstest.nyc.mn#Belarus
 vless://d6b8011a-c725-435a-9fec-bf6d3530392c@103.160.204.36:2087?path=%2F%3Fed%3D2560&security=tls&encryption=none&host=vlee.amclubs.nyc.mn&type=ws&sni=vlee.amclubs.nyc.mn#Belarus
 vless://8953f5bd-6ac8-4a67-b23e-ad01770ae331@103.160.204.40:2053?encryption=none&security=tls&sni=vless.sub.amclubs.us.kg&type=ws&host=vless.sub.amclubs.us.kg&path=%2F%3Fed%3D2560#Belarus
 vless://d6b8011a-c725-435a-9fec-bf6d3530392c@103.160.204.40:8443?path=%2FTelegram%40V2ray_Alpha%2F%3Fed%3D2560&security=tls&encryption=none&host=vlee.amclubs.nyc.mn&type=ws&sni=vlee.amclubs.nyc.mn#Belarus
