@@ -1,4 +1,5 @@
 ss://YWVzLTI1Ni1nY206WTZSOXBBdHZ4eHptR0M@103.106.231.82:5600#Australia
+vless://6202b230-417c-4d8e-b624-0f71afa9c75d@193.9.49.30:8880?type=ws&host=vms.lifetime44.workers.dev&path=%2F#Australia
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZVVdYNkNPTFpZbWFIbFVHaUt3RGFO@45.79.238.129:443#Australia
 hysteria2://kjq3gpn1xom1ted9@assets.gateway-stream.com:52002?sni=assets.gateway-stream.com#Austria
 vless://36a857e4-f3d4-43aa-8b90-d7da849da989@002.inc-electrocell-001-002.workers.dev:443?encryption=none&security=tls&sni=002.Inc-ElectROcElL-001-002.WoRKERS.DEV&fp=chrome&alpn=http%2F1.1&insecure=0&allowInsecure=0&type=ws&host=002.inc-electrocell-001-002.workers.dev&path=%2FeyJqdW5rIjoib0RnakxTZUZvOSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0%3D%3Fed%3D2560#Belarus
@@ -19,7 +20,6 @@ vmess://eyJhZGQiOiAiMS4xLjEuMiIsICJhaWQiOiAwLCAiaG9zdCI6ICIxLjEuMS4yIiwgImlkIjog
 vmess://eyJhZGQiOiAiMS4xLjEuMyIsICJhaWQiOiAwLCAiaG9zdCI6ICIxLjEuMS4zIiwgImlkIjogImE5MWM1MGMzLWM4MzgtNDI4ZC1hNjFkLWVkMzcyMjU1YmI3MSIsICJuZXQiOiAid3MiLCAicGF0aCI6ICIvQWNkdG1zNHpmeCIsICJwb3J0IjogNDQzLCAicHMiOiAiQmVsYXJ1cyIsICJzZWN1cml0eSI6ICJhdXRvIiwgInNraXAtY2VydC12ZXJpZnkiOiB0cnVlLCAic25pIjogIiIsICJ0bHMiOiAidGxzIiwgInR5cGUiOiAiYXV0byJ9
 vmess://eyJhZGQiOiAiMS4xLjEuNCIsICJhaWQiOiAwLCAiaG9zdCI6ICIxLjEuMS40IiwgImlkIjogImE5MWM1MGMzLWM4MzgtNDI4ZC1hNjFkLWVkMzcyMjU1YmI3MSIsICJuZXQiOiAid3MiLCAicGF0aCI6ICIvQWNkdG1zNHpmeCIsICJwb3J0IjogNDQzLCAicHMiOiAiQmVsYXJ1cyIsICJzZWN1cml0eSI6ICJhdXRvIiwgInNraXAtY2VydC12ZXJpZnkiOiB0cnVlLCAic25pIjogIiIsICJ0bHMiOiAidGxzIiwgInR5cGUiOiAiYXV0byJ9
 vmess://eyJhZGQiOiAiMS4xLjEuNSIsICJhaWQiOiAwLCAiaG9zdCI6ICIxLjEuMS41IiwgImlkIjogImE5MWM1MGMzLWM4MzgtNDI4ZC1hNjFkLWVkMzcyMjU1YmI3MSIsICJuZXQiOiAid3MiLCAicGF0aCI6ICIvQWNkdG1zNHpmeCIsICJwb3J0IjogNDQzLCAicHMiOiAiQmVsYXJ1cyIsICJzZWN1cml0eSI6ICJhdXRvIiwgInNraXAtY2VydC12ZXJpZnkiOiB0cnVlLCAic25pIjogIiIsICJ0bHMiOiAidGxzIiwgInR5cGUiOiAiYXV0byJ9
-vless://2e409cdc-d0c9-4fc0-b285-9371034b8002@1.call-me-seyed.ir:8080?path=%2F&security=none&encryption=none&type=ws#Belarus
 vless://2e409cdc-d0c9-4fc0-b285-9371034b8002@1.glitchout.ir:443?security=none&encryption=none&headerType=none&type=tcp#Belarus
 vless://98262dbd-3606-437b-b12e-3f38ca62522f@1.rmgyvpn.rest:443?encryption=none&fp=chrome&host=1.rmgyvpn.rest&path=%2Fws-cdn&security=tls&sni=1.rmgyvpn.rest&type=ws#Belarus
 vless://7646b550-0600-45cf-9a0e-ed38f2a88222@102.177.176.213:80?path=%2F%40V2ngFast-%40V2ngFast-%40V2ngFast-%40V2ngFast-%40V2ngFast-%40V2ngFast%3Fed%3D2048&security&encryption=none&host=v2ngfast.nanvrfood.ir.&type=httpupgrade#Belarus
@@ -41,8 +41,8 @@ vless://814bd064-544d-4255-a070-5705c03f6da9@103.106.229.190:19261?security=real
 trojan://63779501-4c22-4a03-83d3-9f611b227e7b@103.11.214.137:443?security=tls&sni=c1mc.cdncisco4.co&allowInsecure=1&type=tcp#Belarus
 trojan://63779501-4c22-4a03-83d3-9f611b227e7b@103.11.214.214:443?security=tls&sni=c1mc.cdncisco4.co&allowInsecure=1&type=tcp#Belarus
 vless://fc7abee3-37f4-4ee7-dc65-04af94596e17@103.116.7.10:2052/?type=ws&encryption=none&host=jp.shangou.xyz&path=%2F#Belarus
-trojan://Aimer@103.116.7.100:2087/?type=tcp&security=tls&sni=ngepx.ambercc.filegear-sg.me#Belarus
 vless://80e79dc0-ad8f-4008-a221-996252a6f15f@103.116.7.100:2087/?type=ws&encryption=none&host=20241205.666888.lol&path=%2F%3Fed%3D2560&security=tls&sni=20241205.666888.lol&alpn=http%2F1.1&fp=random#Belarus
+trojan://Aimer@103.116.7.100:2087/?type=tcp&security=tls&sni=ngepx.ambercc.filegear-sg.me#Belarus
 trojan://Aimer@103.116.7.103:2083?allowInsecure=1&sni=epgc.aimercc.dpdns.org&type=ws&host=epgc.aimercc.dpdns.org&path=%2F%3Fed%3D2560#Belarus
 vless://ee6774c0-9b19-4ff1-8b30-2da4b71977e2@103.116.7.103:2083?encryption=none&security=tls&sni=edgc.aimercc.dpdns.org&alpn=h3&fp=random&allowInsecure=1&type=ws&host=edgc.aimercc.dpdns.org&path=%2F%3Fed%3D2560%26proxyip%3Dts.hpc.tw#Belarus
 trojan://Aimer@103.116.7.133:2083/?type=ws&host=epmo.ambercc.filegear-sg.me&path=%2F%3Fed%3D2560%26proxyip%3Dts.hpc.tw&security=tls&sni=epmo.ambercc.filegear-sg.me#Belarus
