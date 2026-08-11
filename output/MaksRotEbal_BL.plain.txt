@@ -18,7 +18,7 @@ vmess://eyJhZGQiOiAiMS4xLjEuNCIsICJhaWQiOiAwLCAiaG9zdCI6ICIxLjEuMS40IiwgImlkIjog
 vmess://eyJhZGQiOiAiMS4xLjEuNSIsICJhaWQiOiAwLCAiaG9zdCI6ICIxLjEuMS41IiwgImlkIjogImE5MWM1MGMzLWM4MzgtNDI4ZC1hNjFkLWVkMzcyMjU1YmI3MSIsICJuZXQiOiAid3MiLCAicGF0aCI6ICIvQWNkdG1zNHpmeCIsICJwb3J0IjogNDQzLCAicHMiOiAiQmVsYXJ1cyIsICJzZWN1cml0eSI6ICJhdXRvIiwgInNraXAtY2VydC12ZXJpZnkiOiB0cnVlLCAic25pIjogIiIsICJ0bHMiOiAidGxzIiwgInR5cGUiOiAiYXV0byJ9
 vless://2e409cdc-d0c9-4fc0-b285-9371034b8002@1.call-me-seyed.ir:8080?path=%2F&security=none&encryption=none&type=ws#Belarus
 vless://2e409cdc-d0c9-4fc0-b285-9371034b8002@1.glitchout.ir:443?security=none&encryption=none&headerType=none&type=tcp#Belarus
-vless://98262dbd-3606-437b-b12e-3f38ca62522f@1.rmgyvpn.rest:443?encryption=none&fp=chrome&host=1.rmgyvpn.rest&path=%2Fws-cdn&security=tls&sni=1.rmgyvpn.rest&type=ws#Belarus
+vless://98262dbd-3606-437b-b12e-3f38ca62522f@1.rmgyvpn.rest:443?fp=chrome&host=1.rmgyvpn.rest&path=%2Fws-cdn&security=tls&sni=1.rmgyvpn.rest&type=ws#Belarus
 vless://7646b550-0600-45cf-9a0e-ed38f2a88222@102.177.176.213:80?path=%2F%40V2ngFast-%40V2ngFast-%40V2ngFast-%40V2ngFast-%40V2ngFast-%40V2ngFast%3Fed%3D2048&security&encryption=none&host=v2ngfast.nanvrfood.ir.&type=httpupgrade#Belarus
 vless://fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf@102.177.176.213:8880?path=%2F&security=none&encryption=none&host=jp.laoyoutiao.link&type=ws#Belarus
 vless://fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf@102.177.176.29:8880?allowInsecure=0&sni=hk.laoyoutiao.link&type=ws&host=hk.laoyoutiao.link&path=%2F#Belarus
@@ -44,9 +44,9 @@ trojan://Aimer@103.116.7.103:2083?allowInsecure=1&sni=epgc.aimercc.dpdns.org&typ
 trojan://Aimer@103.116.7.133:2083/?type=ws&host=epmo.ambercc.filegear-sg.me&path=%2F%3Fed%3D2560%26proxyip%3Dts.hpc.tw&security=tls&sni=epmo.ambercc.filegear-sg.me#Belarus
 trojan://Aimer@103.116.7.152:2096/?type=tcp&security=tls&sni=epccs.ambercc.filegear-sg.me#Belarus
 vless://401374e6-df77-41fb-f638-dad8184f175b@103.116.7.158:443/?type=grpc&encryption=none&security=tls&sni=pqh36v4.hiddendom.shop#Belarus
-vless://cf39fab0-bb85-42cb-9945-2ad69d78e575@103.116.7.16:443?path=%2FGOrbEh&amp;security=tls&amp;encryption=none&amp;insecure=0&amp;host=rubifen.adaspoloandco.com&amp;fp=chrome&amp;type=ws&amp;allowInsecure=0&amp;sni=rubifen.adaspoloandco.com#Belarus
+vless://cf39fab0-bb85-42cb-9945-2ad69d78e575@103.116.7.16:443?path=%2FGOrbEh&security=tls&encryption=none&insecure=0&host=rubifen.adaspoloandco.com&fp=chrome&type=ws&allowInsecure=0&sni=rubifen.adaspoloandco.com#Belarus
 vless://fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf@103.116.7.168:8880/?type=ws&encryption=none&host=kjgx.laoyoutiao.link&path=Telegram%40WangCai2%2F%3Fed%3D2560#Belarus
-vless://4d10c997-4781-4cd9-82c3-15453523e12c@103.116.7.174:443?encryption=none&amp;fp=chrome&amp;host=support.zoom.us.yxls.eu.cc&amp;path=%2Fsg-melbi&amp;security=tls&amp;sni=support.zoom.us.yxls.eu.cc&amp;type=ws#Belarus
+vless://4d10c997-4781-4cd9-82c3-15453523e12c@103.116.7.174:443?path=%2Fsg-melbi&security=tls&encryption=none&insecure=0&host=support.zoom.us.yxls.eu.cc&fp=chrome&type=ws&allowInsecure=0&sni=support.zoom.us.yxls.eu.cc#Belarus
 vless://583ceab3-4022-4553-9158-9bedc625ad4e@103.116.7.177:8880/?type=ws&encryption=none&host=ip.langmanshanxi.top&path=%2FTelegram%40WangCai2%2F%3Fed%3D2560#Belarus
 trojan://Aimer@103.116.7.189:443/?type=tcp&security=tls&sni=ngepx.ambercc.filegear-sg.me#Belarus
 vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049@103.116.7.19:8880/?type=ws&encryption=none&host=reedfree8mahsang2.redorg.ir&path=%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40pgkj666%20#Belarus
@@ -62,9 +62,9 @@ vless://b5441b0d-2147-4898-8a6a-9b2c87f58382@103.116.7.3:8880/?type=ws&encryptio
 trojan://Aimer@103.116.7.67:2083/?type=tcp&security=tls&sni=epgb.aimercc.dpdns.org#Belarus
 trojan://T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf@103.125.216.18:443/?type=tcp&security=tls#Belarus
 vmess://eyJhZGQiOiAiMTAzLjEyNy4yNDMuNTUiLCAiYWlkIjogIjAiLCAiYWxwbiI6ICIiLCAiZnAiOiAiIiwgImhvc3QiOiAiIiwgImlkIjogIjhlNWI1MjFhLTRhNTYtNGJkNy1iYWYxLWJmY2RmNTVkNmNmMSIsICJuZXQiOiAidGNwIiwgInBhdGgiOiAiL0FCQ0RFIiwgInBvcnQiOiAiNTgwNTEiLCAicHMiOiAiQmVsYXJ1cyIsICJzY3kiOiAiYXV0byIsICJzbmkiOiAiIiwgInRscyI6ICIiLCAidHlwZSI6ICJodHRwIiwgInYiOiAiMiJ9
+vless://eaf76557-2219-4799-8171-d7020adfefd0@103.133.1.160:80?encryption=none&type=ws&host=soft-shadow-1e33.xicav73335.workers.dev&path=%2Fws&security=none#Belarus
 vless://583ceab3-4022-4553-9158-9bedc625ad4e@103.133.1.177:8880/?type=ws&encryption=none&host=ip.langmanshanxi.top&path=%2FTelegram%40WangCai2%2F%3Fed%3D2560#Belarus
 vless://583ceab3-4022-4553-9158-9bedc625ad4e@103.133.1.188:8880?allowInsecure=0&sni=Telegram-channel-WangCai2&type=ws&host=ip.langmanshanxi.top&path=%2FTelegramU0001F1E8U0001F1F3#Belarus
-trojan://humanity@103.133.1.2:443#Belarus
 vless://401374e6-df77-41fb-f638-dad8184f175b@103.133.1.227:443/?type=grpc&encryption=none&flow&security=tls&sni=pqh24v3.hiddendom.shop&alpn=h2#Belarus
 trojan://8r%3C%5B9%27l6hAO%238ZQi@103.133.1.253:443/?type=tcp&security=tls&sni=Koma-YT.PAGeS.Dev#Belarus
 vless://34c01e61-f4f3-4afb-a83b-406caf8caa33@103.133.1.254:8880/?type=ws&encryption=none&host=yg.bantony199.top&path=%2FTelegram%F0%9F%87%A8%F0%9F%87%B3#Belarus
