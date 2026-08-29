@@ -1,3 +1,4 @@
+vmess://eyJhZGQiOiAiMjYuNzJpbWcueHl6IiwgImFpZCI6IDAsICJob3N0IjogIjI2LjcyaW1nLnh5eiIsICJpZCI6ICI4MWQ5M2Y2Mi0xNWEyLTQ5OTQtYWRiOS0wYjVkOTA2YWFjN2UiLCAibmV0IjogIndzIiwgInBhdGgiOiAiLyIsICJwb3J0IjogNDQzLCAicHMiOiAiQXVzdHJhbGlhIiwgInRscyI6ICJ0bHMiLCAidHlwZSI6ICJhdXRvIiwgInNlY3VyaXR5IjogImF1dG8iLCAic2tpcC1jZXJ0LXZlcmlmeSI6IHRydWUsICJzbmkiOiAiIn0
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZVVdYNkNPTFpZbWFIbFVHaUt3RGFO@45.79.238.129:443#Australia
 vless://36a857e4-f3d4-43aa-8b90-d7da849da989@002.inc-electrocell-001-002.workers.dev:443?encryption=none&security=tls&sni=002.Inc-ElectROcElL-001-002.WoRKERS.DEV&fp=chrome&alpn=http%2F1.1&insecure=0&allowInsecure=0&type=ws&host=002.inc-electrocell-001-002.workers.dev&path=%2FeyJqdW5rIjoib0RnakxTZUZvOSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0%3D%3Fed%3D2560#Belarus
 vless://b74bbaca-8bbe-41e1-9af9-18d467836282@017.electrocellco-cf-017.workers.dev:443?encryption=none&security=tls&sni=017.EleCTRoCelLCo-CF-017.Workers.dEv&type=ws&host=017.EleCTRoCelLCo-CF-017.Workers.dEv&path=%2FeyJqdW5rIjoibnhUbllUVXY1OWIiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119%3Fed%3D2560#Belarus
@@ -7,7 +8,6 @@ vless://527451fe-ee1f-4e6f-94ca-808f055f7c9b@05a5f9v5a6cm563ieoye7j-8tnpd.hsysye
 vless://904a9a3e-1d23-4b33-9830-cab1a34d0b41@0in.pin.spaidan.ir:27594?encryption=none&amp;security=none&amp;type=tcp#Belarus
 vless://904a9a3e-1d23-4b33-9830-cab1a34d0b41@0in.pin.spaidan.ir:31618?encryption=none&host&path=%2F&security=none&type=ws#Belarus
 vless://d81a73a0-1173-452c-b64f-22497b44f96f@0in.pin.spaidan.ir:43293?authority&encryption=none&security=none&serviceName&type=grpc#Belarus
-vless://b59e2f19-d90e-4384-82ed-09e6c4266969@1-netvia.tdomainasite.ir:64428?encryption=none&security=none&type=tcp&headerType=http&path=%2F&host=amp-api-edge.apps.apple.com#Belarus
 vless://c07fef7d-e8d2-42fe-b977-50e368f18293@1.0.0.0:443?flow=xtls-rprx-direct-udp443&encryption=none&security=tls&sni=vincent-jackson2021.ga&type=ws&host=vincent-jackson2021.ga&path=%2FThe-Great-Awakening_ws#Belarus
 vless://3ead7294-b782-42e4-968c-f93ce3bfbdd6@1.1.1.0:443?encryption=none&security=tls&type=ws&host=v2rayge2.free3333.xyz&path=%2Fray#Belarus
 vmess://eyJhZGQiOiAiMS4xLjEuMSIsICJhaWQiOiAwLCAiaG9zdCI6ICJ1c2JrLmNmaXAudG9wIiwgImlkIjogIjM2ZjcxYjAyLTA0YmYtNGFiNi04ZjE3LTg1MGEwMDJiNDQ4ZCIsICJuZXQiOiAid3MiLCAicGF0aCI6ICIvY2N0djEzL2hkLm0zdTgiLCAicG9ydCI6IDQ0MywgInBzIjogIkJlbGFydXMiLCAic2VjdXJpdHkiOiAiYXV0byIsICJza2lwLWNlcnQtdmVyaWZ5IjogdHJ1ZSwgInNuaSI6ICIiLCAidGxzIjogInRscyIsICJ0eXBlIjogImF1dG8ifQ
@@ -51,12 +51,11 @@ vless://8bbf020e-653f-4a82-9900-1214e4e37dab@103.119.18.158:443/?type=tcp&encryp
 vless://a77cedab-f429-40bb-b6d4-fd9dd681e675@103.119.18.192:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=OrLSHSvLuAgKZqxfnPszRZdZvYVTPNozRP6-NX3JGDI&security=reality&sid=5c83ae5368d1f1b5&sni=amd.com&type=tcp#Belarus
 vless://423b1d79-08c4-403f-9d5e-c541f791b55f@103.119.19.208:443?encryption=none&flow=xtls-rprx-vision&fp&pbk=b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI&security=reality&sid=00bca5982f82d083&sni=eu-central.cendora.ru&type=tcp#Belarus
 vmess://eyJhZGQiOiAiMTAzLjEyNy4yNDMuNTUiLCAiYWlkIjogIjAiLCAiYWxwbiI6ICIiLCAiZnAiOiAiIiwgImhvc3QiOiAiIiwgImlkIjogIjhlNWI1MjFhLTRhNTYtNGJkNy1iYWYxLWJmY2RmNTVkNmNmMSIsICJuZXQiOiAidGNwIiwgInBhdGgiOiAiL0FCQ0RFIiwgInBvcnQiOiAiNTgwNTEiLCAicHMiOiAiQmVsYXJ1cyIsICJzY3kiOiAiYXV0byIsICJzbmkiOiAiIiwgInRscyI6ICIiLCAidHlwZSI6ICJodHRwIiwgInYiOiAiMiJ9
-vless://eaf76557-2219-4799-8171-d7020adfefd0@103.133.1.160:80?path=%2Fws&security=none&encryption=none&host=soft-shadow-1e33.xicav73335.workers.dev&type=ws#Belarus
+vless://eaf76557-2219-4799-8171-d7020adfefd0@103.133.1.160:80?encryption=none&type=ws&host=soft-shadow-1e33.xicav73335.workers.dev&path=%2Fws&security=none#Belarus
 vless://583ceab3-4022-4553-9158-9bedc625ad4e@103.133.1.177:8880/?type=ws&encryption=none&host=ip.langmanshanxi.top&path=%2FTelegram%40WangCai2%2F%3Fed%3D2560#Belarus
 vless://583ceab3-4022-4553-9158-9bedc625ad4e@103.133.1.188:8880?allowInsecure=0&sni=Telegram-channel-WangCai2&type=ws&host=ip.langmanshanxi.top&path=%2FTelegramU0001F1E8U0001F1F3#Belarus
 vless://34c01e61-f4f3-4afb-a83b-406caf8caa33@103.133.1.254:8880/?type=ws&encryption=none&host=yg.bantony199.top&path=%2FTelegram%F0%9F%87%A8%F0%9F%87%B3#Belarus
 vless://8b562c77-fc99-4d25-9100-d8c0849cc9ff@103.133.1.33:2053/?type=ws&encryption=none&host=cosi.bvzizx.com&path=%2Fwss37193&security=tls&sni=8b562c77-fc99-4d25-9100-d8c0849cc9ff.bvzizx.com#Belarus
-vless://f1d247db-d7ce-4eb8-9c0d-7b10603cd0b4@103.148.73.144:8443?security=tls&fp=chrome&sni=ty986gfazs.cainiaohub.xyz&type=ws&headerType=none&host=ty986gfazs.cainiaohub.xyz&path=%2F81574b6b-c9d7-44a0-b83d-dad56e8cb530#Belarus
 vless://f1d247db-d7ce-4eb8-9c0d-7b10603cd0b4@103.148.73.167:8443?security=tls&fp=chrome&sni=ty986gfazs.cainiaohub.xyz&type=ws&headerType=none&host=ty986gfazs.cainiaohub.xyz&path=%2F81574b6b-c9d7-44a0-b83d-dad56e8cb530#Belarus
 vless://928e6cce-8ced-4243-9a48-a6642edd09b0@103.149.183.198:13779?security=reality&flow=xtls-rprx-vision&pbk=llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg&sid=af1bdd293097b664&fp=chrome&sni=tesla.com&type=tcp&headerType=none&host=tesla.com&path=%2F#Belarus
 trojan://4f2c305b-9a03-4493-b3e4-2dff2f1af8c9@103.168.56.77:443/?type=tcp&security=tls#Belarus
@@ -69,6 +68,7 @@ trojan://NISHIKUITAN111@103.169.142.224:443/?type=ws&host=zb.ylks.xyz&path=%2F&s
 vless://0132166f-e702-48ed-a9e7-b07af768faf8@103.169.142.251:8880/?type=ws&encryption=none&host=cf.d3z.net&path=%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2%20%2F%3Fed%3D2560#Belarus
 vless://34c01e61-f4f3-4afb-a83b-406caf8caa33@103.169.142.254:8880/?type=ws&encryption=none&host=yg.bantony199.top&path=%2FTelegram%F0%9F%87%A8%F0%9F%87%B3#Belarus
 vless://6202b230-417c-4d8e-b624-0f71afa9c75d@103.169.142.30:8880?type=ws&headerType=none&host=vms.lifetime38.workers.dev&path=%2F#Belarus
+vless://2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5@103.169.142.6:443?Telegram=%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad%2C%40GozargahAzad&security=tls&sni=cfed.tgzdyz2.top&type=ws&path=%2Ftg%40zdyz2#Belarus
 vless://49ed01ad-3bb4-204f-b0ff-a58f658fd618@103.175.79.10:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=speed.cloudflare.com&fp=chrome&security=reality&pbk=4e-unF1RO2v--E7-X3aqxnCSPaK9QaTfJ7LawAr2bRI&sid#Belarus
 vless://c7e9c591-2764-423a-afca-efbd010fd396@103.179.143.215:443?fp=chrome&host=forfreeuse.rtqa.ru&path=%2F&security=tls&sni=forfreeuse.rtqa.ru&type=ws#Belarus
 vless://1a5b24bc-6180-4fa7-922d-ba7ee8a7a2b7@103.18.49.100:443?path=%2Fid-pusat&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=support.zoom.us.cyylr.eu.cc&fp=chrome&type=ws&allowInsecure=0&sni=support.zoom.us.cyylr.eu.cc#Belarus
