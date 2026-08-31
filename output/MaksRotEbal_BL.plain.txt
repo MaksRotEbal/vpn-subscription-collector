@@ -1,5 +1,3 @@
-vless://6202b230-417c-4d8e-b624-0f71afa9c75d@193.9.49.30:8880?type=ws&host=vms.lifetime44.workers.dev&path=%2F#Australia
-vmess://eyJhZGQiOiAiMjYuNzJpbWcueHl6IiwgImFpZCI6IDAsICJob3N0IjogIjI2LjcyaW1nLnh5eiIsICJpZCI6ICI4MWQ5M2Y2Mi0xNWEyLTQ5OTQtYWRiOS0wYjVkOTA2YWFjN2UiLCAibmV0IjogIndzIiwgInBhdGgiOiAiLyIsICJwb3J0IjogNDQzLCAicHMiOiAiQXVzdHJhbGlhIiwgInRscyI6ICJ0bHMiLCAidHlwZSI6ICJhdXRvIiwgInNlY3VyaXR5IjogImF1dG8iLCAic2tpcC1jZXJ0LXZlcmlmeSI6IHRydWUsICJzbmkiOiAiIn0
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZVVdYNkNPTFpZbWFIbFVHaUt3RGFO@45.79.238.129:443#Australia
 vless://36a857e4-f3d4-43aa-8b90-d7da849da989@002.inc-electrocell-001-002.workers.dev:443?encryption=none&security=tls&sni=002.Inc-ElectROcElL-001-002.WoRKERS.DEV&fp=chrome&alpn=http%2F1.1&insecure=0&allowInsecure=0&type=ws&host=002.inc-electrocell-001-002.workers.dev&path=%2FeyJqdW5rIjoib0RnakxTZUZvOSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0%3D%3Fed%3D2560#Belarus
 vless://b74bbaca-8bbe-41e1-9af9-18d467836282@017.electrocellco-cf-017.workers.dev:443?encryption=none&security=tls&sni=017.EleCTRoCelLCo-CF-017.Workers.dEv&type=ws&host=017.EleCTRoCelLCo-CF-017.Workers.dEv&path=%2FeyJqdW5rIjoibnhUbllUVXY1OWIiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119%3Fed%3D2560#Belarus
@@ -9,13 +7,13 @@ vless://527451fe-ee1f-4e6f-94ca-808f055f7c9b@05a5f9v5a6cm563ieoye7j-8tnpd.hsysye
 vless://904a9a3e-1d23-4b33-9830-cab1a34d0b41@0in.pin.spaidan.ir:27594?encryption=none&amp;security=none&amp;type=tcp#Belarus
 vless://904a9a3e-1d23-4b33-9830-cab1a34d0b41@0in.pin.spaidan.ir:31618?encryption=none&host&path=%2F&security=none&type=ws#Belarus
 vless://d81a73a0-1173-452c-b64f-22497b44f96f@0in.pin.spaidan.ir:43293?authority&encryption=none&security=none&serviceName&type=grpc#Belarus
-vless://50414e45-4c5f-5a45-5553-9df80d553692@0lzw35eluyys.56zv22emuags.workers.dev:80?path=%2Fstream%2FPANEL_ZEUS%2F9df80d553692&amp;security=none&amp;encryption=none&amp;host=0lzw35eluyys.56zv22emuags.workers.dev&amp;type=ws#Belarus
-vless://50414e45-4c5f-5a45-5553-9df80d553692@0lzw35eluyys.56zv22emuags.workers.dev:443?path=%2Fstream%2FPANEL_ZEUS%2F9df80d553692&amp;security=tls&amp;encryption=none&amp;insecure=0&amp;host=0lzw35eluyys.56zv22emuags.workers.dev&amp;type=ws&amp;allowInsecure=0&amp;sni=0lzw35eluyys.56zv22emuags.workers.dev#Belarus
-trojan://50414e45-4c5f-5a45-5553-9df80d553692@0lzw35eluyys.56zv22emuags.workers.dev:443?path=%2Fstream%2FPANEL_ZEUS%2F9df80d553692&amp;security=tls&amp;insecure=0&amp;host=0lzw35eluyys.56zv22emuags.workers.dev&amp;type=ws&amp;allowInsecure=0&amp;sni=0lzw35eluyys.56zv22emuags.workers.dev#Belarus
+vless://50414e45-4c5f-5a45-5553-9df80d553692@0lzw35eluyys.56zv22emuags.workers.dev:80?path=%2Fstream%2FPANEL_ZEUS%2F9df80d553692&security=none&encryption=none&host=0lzw35eluyys.56zv22emuags.workers.dev&type=ws#Belarus
+vless://50414e45-4c5f-5a45-5553-9df80d553692@0lzw35eluyys.56zv22emuags.workers.dev:443?path=%2Fstream%2FPANEL_ZEUS%2F9df80d553692&security=tls&encryption=none&insecure=0&host=0lzw35eluyys.56zv22emuags.workers.dev&type=ws&allowInsecure=0&sni=0lzw35eluyys.56zv22emuags.workers.dev#Belarus
+trojan://50414e45-4c5f-5a45-5553-9df80d553692@0lzw35eluyys.56zv22emuags.workers.dev:443?path=%2Fstream%2FPANEL_ZEUS%2F9df80d553692&security=tls&insecure=0&host=0lzw35eluyys.56zv22emuags.workers.dev&type=ws&allowInsecure=0&sni=0lzw35eluyys.56zv22emuags.workers.dev#Belarus
+vless://a7759aa2-93bc-4bd5-acd5-ad549b6fb7d8@1-netvia.tdomainasite.ir:64428?encryption=none&security=none&type=tcp&headerType=http&path=%2F&host=amp-api-edge.apps.apple.com#Belarus
 vless://c07fef7d-e8d2-42fe-b977-50e368f18293@1.0.0.0:443?flow=xtls-rprx-direct-udp443&encryption=none&security=tls&sni=vincent-jackson2021.ga&type=ws&host=vincent-jackson2021.ga&path=%2FThe-Great-Awakening_ws#Belarus
 vless://3ead7294-b782-42e4-968c-f93ce3bfbdd6@1.1.1.0:443?encryption=none&security=tls&type=ws&host=v2rayge2.free3333.xyz&path=%2Fray#Belarus
 vmess://eyJhZGQiOiAiMS4xLjEuMSIsICJhaWQiOiAwLCAiaG9zdCI6ICJ1c2JrLmNmaXAudG9wIiwgImlkIjogIjM2ZjcxYjAyLTA0YmYtNGFiNi04ZjE3LTg1MGEwMDJiNDQ4ZCIsICJuZXQiOiAid3MiLCAicGF0aCI6ICIvY2N0djEzL2hkLm0zdTgiLCAicG9ydCI6IDQ0MywgInBzIjogIkJlbGFydXMiLCAic2VjdXJpdHkiOiAiYXV0byIsICJza2lwLWNlcnQtdmVyaWZ5IjogZmFsc2UsICJzbmkiOiAidXNiay5jZmlwLnRvcCIsICJ0bHMiOiAidGxzIiwgInR5cGUiOiAiYXV0byJ9
-trojan://080a97ac-d88d-44dd-b288-046295e5d6e9@1.168.183.82:443?allowInsecure=1&sni=ttww11.bpca2026.top&ws=1&wspath=%2Fimages#Belarus
 vless://2e409cdc-d0c9-4fc0-b285-9371034b8002@1.call-me-seyed.ir:8080?path=%2F&security=none&encryption=none&type=ws#Belarus
 vless://2e409cdc-d0c9-4fc0-b285-9371034b8002@1.glitchout.ir:443?security=none&encryption=none&headerType=none&type=tcp#Belarus
 vless://3e4d70e5-7ec9-48f9-a4e0-48c44c6063fd@102.129.165.81:48905?type=tcp&security=reality&encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=XIubADu7punjUa2oUfHj2vTmUzUJXN_xDrGsmf_LslY&sni=gaming.radeon.com#Belarus
@@ -31,7 +29,6 @@ vless://42795c1c-acab-46f5-8c10-a86de801411b@102.177.189.29:443/?type=ws&encrypt
 vless://fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf@102.177.189.29:8880/?type=ws&encryption=none&host=hk.laoyoutiao.link&path=%2FTelegramU0001F1E8U0001F1F3#Belarus
 vless://f515c834-d3f9-4be2-9326-f72a0d3b6c11@102.177.189.98:8080?path=%2F%3Fed%3D1024&security=none&encryption=none&host=lOgIn.TecHnOvahUb.moM.&type=httpupgrade#Belarus
 vless://497631c4-a1a4-004d-a86a-f42873473bb6@102.68.86.223:8443?security=reality&encryption=none&pbk=10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc&headerType=none&fp=edge&type=tcp&flow=xtls-rprx-vision&sni=auto.quattro-tech.ru&sid=43dcff53849b81e6#Belarus
-trojan://3828095943467868160@103.106.229.111:443?sni=poetic-coral.dolphin109.quest&peer=poetic-coral.dolphin109.quest&security=tls#Belarus
 vless://814bd064-544d-4255-a070-5705c03f6da9@103.106.229.190:13898?type=tcp&security=reality&flow=xtls-rprx-vision&fp=firefox&pbk=k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0&sid=48050fab&sni=www.apple.com#Belarus
 vless://814bd064-544d-4255-a070-5705c03f6da9@103.106.229.190:19261?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.apple.com&fp=chrome&pbk=k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0&sid=48050fab&type=tcp&headerType=none#Belarus
 trojan://63779501-4c22-4a03-83d3-9f611b227e7b@103.11.214.137:443?security=tls&sni=c1mc.cdncisco4.co&allowInsecure=1&type=tcp#Belarus
