@@ -11,8 +11,8 @@ vless://3ead7294-b782-42e4-968c-f93ce3bfbdd6@1.1.1.0:443?encryption=none&securit
 vmess://eyJhZGQiOiAiMS4xLjEuMSIsICJhaWQiOiAwLCAiaG9zdCI6ICJ1c2JrLmNmaXAudG9wIiwgImlkIjogIjM2ZjcxYjAyLTA0YmYtNGFiNi04ZjE3LTg1MGEwMDJiNDQ4ZCIsICJuZXQiOiAid3MiLCAicGF0aCI6ICIvY2N0djEzL2hkLm0zdTgiLCAicG9ydCI6IDQ0MywgInBzIjogIkJlbGFydXMiLCAic2VjdXJpdHkiOiAiYXV0byIsICJza2lwLWNlcnQtdmVyaWZ5IjogdHJ1ZSwgInNuaSI6ICIiLCAidGxzIjogInRscyIsICJ0eXBlIjogImF1dG8ifQ
 vless://2e409cdc-d0c9-4fc0-b285-9371034b8002@1.call-me-seyed.ir:8080?path=%2F&security=none&encryption=none&type=ws#Belarus
 vless://2e409cdc-d0c9-4fc0-b285-9371034b8002@1.glitchout.ir:443?security=none&encryption=none&headerType=none&type=tcp#Belarus
-trojan://BxceQaOe@100.42.228.109:443?security=tls&sni=t.me%2Fripaojiedian#Belarus
-vless://c18b978e-1c4e-415c-8bea-07942b563a64@101.142.129.72:443?fp=chrome&host=shuma.ccwu.cc&path=%2F&security=tls&sni=shuma.ccwu.cc&type=ws#Belarus
+vless://8cb0c4fb-03ee-35b8-a47b-cd1d7e76dfd3@1.ppap.a1.zjs.ppt.998.kfc-520.com:10002?security=reality&flow=xtls-rprx-vision&pbk=3CzFme1556AXsnF-1bVjlvxYtU_rG2i50piDBR_NBjw&sid=f61f173b&fp=firefox&sni=www.nvidia.com&type=tcp&headerType=none&host=www.nvidia.com&path=%2F#Belarus
+trojan://BxceQaOe@100.42.228.109:443?allowInsecure=1&sni=t.me%2Fripaojiedian#Belarus
 vless://3e4d70e5-7ec9-48f9-a4e0-48c44c6063fd@102.129.165.81:48905?type=tcp&security=reality&encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=XIubADu7punjUa2oUfHj2vTmUzUJXN_xDrGsmf_LslY&sni=gaming.radeon.com#Belarus
 vless://730f02b4-a187-4498-b3fa-9e9f1dccf47c@102.177.189.1:8880?path=%2F&security=none&encryption=none&host=dl1.mcinet.xyz.&type=httpupgrade#Belarus
 vmess://eyJhZGQiOiAiMTAyLjE3Ny4xODkuMTAxIiwgImFpZCI6IDAsICJob3N0IjogIjRmYzEyOGNlLTQ4NDUtMTFmMC1hOTQ4LTZhNzVmNjY3YjQ3Mi5TaG9tYVBhcnZhelJvWWFkZXRvbk5pc3QtQnlwYXNzSXNIZXJlLmxhdCIsICJpZCI6ICI4Zjc0ZWM4YS05NzFjLTExZWQtYThmYy0wMjQyYWMxMjAwMDIiLCAibmV0IjogIndzIiwgInBhdGgiOiAiLzRmYzEyOGNlLTQ4NDUtMTFmMC1hOTQ4LTZhNzVmNjY3YjQ3Mj9lZD0yMzY1IiwgInBvcnQiOiA0NDMsICJwcyI6ICJCZWxhcnVzIiwgInNlY3VyaXR5IjogImF1dG8iLCAic2tpcC1jZXJ0LXZlcmlmeSI6IHRydWUsICJzbmkiOiAiIiwgInRscyI6ICJ0bHMiLCAidHlwZSI6ICJhdXRvIn0
@@ -25,7 +25,6 @@ vless://f515c834-d3f9-4be2-9326-f72a0d3b6c11@102.177.189.98:8080?path=%2F%3Fed%3
 vless://5d4a87fa-16f1-4b65-b217-225a31e36239@102.211.56.29:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w&security=reality&sid=00a61d55a07de885&sni=za.convert-flow.net&type=tcp#Belarus
 vless://c18b978e-1c4e-415c-8bea-07942b563a64@103.101.0.73:443?fp=chrome&host=shuma.ccwu.cc&path=%2F&security=tls&sni=shuma.ccwu.cc&type=ws#Belarus
 vless://ddf09ad0-02dc-485b-9048-1038de5bebf0@103.109.234.243:443?security=reality&encryption=none&pbk=z_Rn0Vvq1GB39RhN6v7DhdtD-kS0XZa_je0h-no_hWs&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=de10.delivery-4f1c.com&sid=59eee550a1014198#Belarus
-vless://ddf09ad0-02dc-485b-9048-1038de5bebf0@103.109.234.246:443?security=reality&encryption=none&pbk=z_Rn0Vvq1GB39RhN6v7DhdtD-kS0XZa_je0h-no_hWs&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=de10.delivery-4f1c.com&sid=59eee550a1014198#Belarus
 vless://b2593749-691c-428c-9481-14979cba3446@103.109.234.61:443?encryption=none&fp=chrome&host=xi.tbv.ccwu.cc&path=%2Fproxyip%3Dus.xiabibi.cf&security=tls&sni=xi.tbv.ccwu.cc&type=ws#Belarus
 trojan://63779501-4c22-4a03-83d3-9f611b227e7b@103.11.214.137:443?security=tls&sni=c1mc.cdncisco4.co&allowInsecure=1&type=tcp#Belarus
 trojan://63779501-4c22-4a03-83d3-9f611b227e7b@103.11.214.214:443?security=tls&sni=c1mc.cdncisco4.co&allowInsecure=1&type=tcp#Belarus
@@ -55,9 +54,11 @@ vless://583ceab3-4022-4553-9158-9bedc625ad4e@103.133.1.177:8880/?type=ws&encrypt
 vless://583ceab3-4022-4553-9158-9bedc625ad4e@103.133.1.188:8880?allowInsecure=0&sni=Telegram-channel-WangCai2&type=ws&host=ip.langmanshanxi.top&path=%2FTelegramU0001F1E8U0001F1F3#Belarus
 vless://34c01e61-f4f3-4afb-a83b-406caf8caa33@103.133.1.254:8880/?type=ws&encryption=none&host=yg.bantony199.top&path=%2FTelegram%F0%9F%87%A8%F0%9F%87%B3#Belarus
 vless://8b562c77-fc99-4d25-9100-d8c0849cc9ff@103.133.1.33:2053/?type=ws&encryption=none&host=cosi.bvzizx.com&path=%2Fwss37193&security=tls&sni=8b562c77-fc99-4d25-9100-d8c0849cc9ff.bvzizx.com#Belarus
-vless://d342d11e-d424-4583-b36e-524ab1f0afa4@103.136.146.73:443?allowInsecure=1&sni=cdn8848.776676.xyz&type=ws&host=cdn8848.776676.xyz&path=%2Furl%2Farchives%3Fed%3D2560fp%3Dchrome&security=tls#Belarus
+vless://ea1c1e20-7263-4b08-a01b-690b29af66b3@103.137.215.122:443?security=reality&flow=xtls-rprx-vision&pbk=T587xqua0Nrs0YreQRWJAP9Wto94NcbbhKPK4DkSi0c&sid=2223411c2ad9c55f&fp=safari&sni=www.apple.com&type=tcp&headerType=none&host=www.apple.com&path=%2F#Belarus
+vless://71b91642-93ed-4923-8cab-877e19bfc2d6@103.139.51.21:443?security=reality&encryption=none&pbk=H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=auth.figmafound.org&sid=711ad7f475c35e5e#Belarus
+vless://71b91642-93ed-4923-8cab-877e19bfc2d6@103.139.51.51:443?security=reality&encryption=none&pbk=H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=cloud.figmafound.org&sid=711ad7f475c35e5e#Belarus
 vless://c18b978e-1c4e-415c-8bea-07942b563a64@103.143.81.178:443?fp=chrome&host=shuma.ccwu.cc&path=%2F&security=tls&sni=shuma.ccwu.cc&type=ws#Belarus
-vless://c18b978e-1c4e-415c-8bea-07942b563a64@103.167.234.26:443?allowInsecure=1&encryption=none&host=shuma.ccwu.cc&path=%2F&security=tls&sni=shuma.ccwu.cc&type=ws#Belarus
+vless://c18b978e-1c4e-415c-8bea-07942b563a64@103.167.234.26:443?fp=chrome&host=shuma.ccwu.cc&path=%2F&security=tls&sni=shuma.ccwu.cc&type=ws#Belarus
 trojan://4f2c305b-9a03-4493-b3e4-2dff2f1af8c9@103.168.56.77:443/?type=tcp&security=tls#Belarus
 vless://583ceab3-4022-4553-9158-9bedc625ad4e@103.169.142.177:8880?allowInsecure=0&sni=Telegram-channel-WangCai2&type=ws&host=ip.langmanshanxi.top&path=%2FTelegramU0001F1E8U0001F1F3#Belarus
 vless://583ceab3-4022-4553-9158-9bedc625ad4e@103.169.142.186:8880?allowInsecure=0&sni=Telegram-channel-WangCai2&type=ws&host=ip.langmanshanxi.top&path=%2FTelegramU0001F1E8U0001F1F3#Belarus
@@ -88,7 +89,7 @@ vless://b2593749-691c-428c-9481-14979cba3446@103.63.30.163:443?encryption=none&f
 vless://b2593749-691c-428c-9481-14979cba3446@103.63.30.73:443?encryption=none&fp=chrome&host=xi.tbv.ccwu.cc&path=%2Fproxyip%3Dus.xiabibi.cf&security=tls&sni=xi.tbv.ccwu.cc&type=ws#Belarus
 vless://c18b978e-1c4e-415c-8bea-07942b563a64@103.71.22.133:8443?fp=chrome&host=shuma.ccwu.cc&path=%2F&security=tls&sni=shuma.ccwu.cc&type=ws#Belarus
 vless://948fac3c-42bf-41a6-a5f9-704d36ff0d8d@103.75.118.144:2053?security=tls&fp=random&sni=snippet.fgfw.ye.gs&type=ws&headerType=none&host=snippet.fgfw.ye.gs&path=%2Fdanfeng#Belarus
-vless://814bd064-544d-4255-a070-5705c03f6da9@103.75.118.228:11452?security=reality&type=tcp&sni=www.apple.com&fp=chrome&flow=xtls-rprx-vision&sid=48050fab&pbk=k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0#Belarus
+vless://814bd064-544d-4255-a070-5705c03f6da9@103.75.118.228:11452?security=reality&encryption=none&pbk=k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=www.apple.com&sid=48050fab#Belarus
 vless://814bd064-544d-4255-a070-5705c03f6da9@103.75.118.228:12683?security=reality&type=tcp&sni=www.apple.com&fp=chrome&flow=xtls-rprx-vision&sid=48050fab&pbk=k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0#Belarus
 vmess://eyJhZGQiOiAiMTAzLjc1LjE4Ni4xNTMiLCAiYWlkIjogMCwgImhvc3QiOiAiIiwgImlkIjogImVmOTE5YzY3LTY2MzgtNDQxNi05MWFmLTlhMTNmZmU1YjljYSIsICJuZXQiOiAid3MiLCAicGF0aCI6ICIvdGFuZHVuZzI4OC5jbGljayIsICJwb3J0IjogODAsICJwcyI6ICJCZWxhcnVzIiwgInNlY3VyaXR5IjogImF1dG8iLCAic2tpcC1jZXJ0LXZlcmlmeSI6IHRydWUsICJzbmkiOiAiIiwgInRscyI6ICIiLCAidHlwZSI6ICJhdXRvIn0
 vmess://eyJhZGQiOiAiMTAzLjgyLjI1LjEwNiIsICJhaWQiOiAwLCAiaG9zdCI6ICIiLCAiaWQiOiAiZWM3Yzk0YjUtNmNhNi00Mjg5LWI0NGItYzY1ODNmMmM1ZjZjIiwgIm5ldCI6ICJ3cyIsICJwYXRoIjogIi9mdXp6eW5nP2VkPTIwNDgiLCAicG9ydCI6IDgwLCAicHMiOiAiQmVsYXJ1cyIsICJzZWN1cml0eSI6ICJhdXRvIiwgInNraXAtY2VydC12ZXJpZnkiOiB0cnVlLCAic25pIjogIiIsICJ0bHMiOiAiIiwgInR5cGUiOiAiYXV0byJ9
@@ -97,4 +98,3 @@ trojan://NISHIKUITAN111@104.129.164.116:443/?type=tcp&security=tls&allowInsecure
 vless://71ed6628-5870-4d19-8a52-f2a3ba3d4898@104.129.164.231:443/?type=ws&encryption=none&host=va.zhuk.us.kg&path=%2FProxyIP%3DProxyIP.US.fxxk.dedyn.io&security=tls&sni=va.zhuk.us.kg#Belarus
 vless://401374e6-df77-41fb-f638-dad8184f175b@104.129.165.101:443/?type=grpc&encryption=none&security=tls&sni=pqh36v4.hiddendom.shop&alpn=h2#Belarus
 vless://583ceab3-4022-4553-9158-9bedc625ad4e@104.129.165.177:8880?allowInsecure=0&sni=Telegram-channel-WangCai2&type=ws&host=ip.langmanshanxi.top&path=%2FTelegramU0001F1E8U0001F1F3#Belarus
-vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049@104.129.165.20:8880/?type=ws&encryption=none&host=reedfree8mahsang2.redorg.ir&path=%2F#Belarus
